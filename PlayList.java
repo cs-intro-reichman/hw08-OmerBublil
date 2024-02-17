@@ -81,6 +81,7 @@ class PlayList {
         for (int i = 0 ; i < size ; i++){
             if (tracks[i] != null){
                 String s =tracks[i].getTitle();
+                // #feedback - you should also ignore the upper/lower case.
             if (s.equals(title)){
                 return i;
             }
@@ -137,7 +138,7 @@ class PlayList {
         if (titleInt != -1){
             remove(titleInt);
         }
-        return;
+        return; // #feedback - this return is not needed, it does nothing at this stage.
 
 
     }
